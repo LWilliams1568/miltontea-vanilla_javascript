@@ -1,0 +1,51 @@
+.centerTitle{
+    text-align: center;
+}
+
+.centerslide {
+    align-self: center;
+}
+
+h1{
+    font-family: 'georgia';
+    font-weight: bold;
+    font-style: initial;
+    font-size: 40px;
+}
+
+p{
+    font-family: 'georgia';
+    font-size: 16px;
+}
+.grayRows {
+    background-color: lightgray;
+    color: white;
+}
+.changeFont{
+    font-family: Georgia;
+
+}
+
+.carouselcontrol {
+    background-image: none !important;
+}    
+
+body{
+    background-color: whitesmoke;
+}
+
+.allButtons {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family:'georgia' ;
+}
+
+.contact{
+    background-color:silver;
+    padding-right:200px;
+    padding-left:200px;     
+
+}

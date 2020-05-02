@@ -21,7 +21,7 @@ p{
 }
 
 .collections {
-    background-color: lightgray;
+    background-color: white;
 }    
 
 .partner{
@@ -79,4 +79,32 @@ a {
 
     body, html {
     height: 100%;
+}
+
+.testimonial{
+    text-align: center;
+}
+
+.centerTitle{
+    text-align: center;
+}
+
+.shopButtons {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family:'georgia';
+    text-transform: uppercase;
+  
+}
+
+.learn{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family:'georgia'
+
 }

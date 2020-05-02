@@ -1,0 +1,46 @@
+{
+  "name": "milton-tea",
+  "version": "1.0.0",
+  "description": ":This is a fictional tea manufacturing site.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "copyfiles": "^2.2.0",
+    "font-awesome": "^4.7.0",
+    "imagemin-cli": "^5.1.0",
+    "jquery": "^3.3.1",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.14.0",
+    "popper.js": "^1.12.9",
+    "rimraf": "^2.6.2",
+    "usemin-cli": "^0.6.0"
+  },
+  "devDependencies": {
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2"
+  },
+  "scripts": {
+    "lite": "lite-server",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin Ourstory.html -d dist --htmlmin -o dist/ourcollections.bhtml && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "scss": "node-sass -o css/ css/",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "start": "npm run watch:all",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LWilliams1568/miltontea.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LWilliams1568/miltontea/issues"
+  },
+  "homepage": "https://github.com/LWilliams1568/miltontea#readme"
+}

@@ -11,7 +11,7 @@
     "imagemin-cli": "^5.1.0",
     "jquery": "^3.3.1",
     "lite-server": "^2.3.0",
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.12.9",
     "rimraf": "^2.6.2",
     "usemin-cli": "^0.6.0"
